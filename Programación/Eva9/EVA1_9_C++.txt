@@ -1,0 +1,61 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    string check;
+    string figura;
+    string figura2;
+    double trap;
+    double trian;
+    double cuad;
+    double result;
+    
+    cout << "Qué figura está usando?" << endl;
+    cin >> figura;
+    if (figura == "trapecio") {
+        cout << "Base menor" << endl;
+        cin >> trap;
+        cout << "Base mayor" << endl;
+        cin >> trian;
+        cout << "Altura" << endl;
+        cin >> cuad;
+        result = (trap + trian) * cuad / 2;
+    } else {
+        if (figura == "triangulo") {
+            cout << "Base" << endl;
+            cin >> trap;
+            cout << "Altura" << endl;
+            cin >> cuad;
+            result = trap * cuad / 2;
+        } else {
+            if (figura == "cuadrado") {
+                cout << "Lado" << endl;
+                cin >> trap;
+                result = trap * trap;
+            } else {
+                if (figura == "romboide") {
+                    cout << "Base" << endl;
+                    cin >> trap;
+                    cout << "Altura" << endl;
+                    cin >> cuad;
+                    result = trap * cuad;
+                } else {
+                    result = "FIgura Inválida";
+                }
+            }
+        }
+    }
+    cout << result << endl;
+    return 0;
+}
+

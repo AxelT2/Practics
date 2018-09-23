@@ -1,0 +1,32 @@
+print("Qué figura está usando?")
+figura = input()
+if figura == "trapecio":
+    print("Base menor")
+    trap = float(input())
+    print("Base mayor")
+    trian = float(input())
+    print("Altura")
+    cuad = float(input())
+    result = (trap + trian) * cuad / 2
+else:
+    if figura == "triangulo":
+        print("Base")
+        trap = float(input())
+        print("Altura")
+        cuad = float(input())
+        result = trap * cuad / 2
+    else:
+        if figura == "cuadrado":
+            print("Lado")
+            trap = float(input())
+            result = trap * trap
+        else:
+            if figura == "romboide":
+                print("Base")
+                trap = float(input())
+                print("Altura")
+                cuad = float(input())
+                result = trap * cuad
+            else:
+                result = "FIgura Inválida"
+print(result)

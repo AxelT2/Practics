@@ -1,0 +1,35 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    double result;
+    double x1;
+    double x2;
+    double y1;
+    double y2;
+    
+    cout << "Ingrese la primera coordenada" << endl;
+    cout << "Ingrese sólo X" << endl;
+    cin >> x1;
+    cout << "Ahora ingrese Y" << endl;
+    cin >> y1;
+    cout << "Ingrese la segunda coordenada" << endl;
+    cout << "Ingrese sólo X" << endl;
+    cin >> x2;
+    cout << "Ahora ingrese Y" << endl;
+    cin >> y2;
+    result = (y2 - y1) / (x2 - x1);
+    cout << result << endl;
+    return 0;
+}
+

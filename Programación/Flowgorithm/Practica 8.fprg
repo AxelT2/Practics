@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-12 09:50:35 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMTA7MjAxOC0wOS0xMjswOToxNjoxNyBhLiBtLjsyOTQ4"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMTA7MjAxOC0wOS0xMjswOTo1MDozNSBhLiBtLjsxOzMwNTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Introduzca la velocidad inicial&quot;" newline="True"/>
+            <declare name="inicial" type="Real" array="False" size=""/>
+            <declare name="final" type="Real" array="False" size=""/>
+            <declare name="time" type="Real" array="False" size=""/>
+            <declare name="acel" type="Real" array="False" size=""/>
+            <input variable="inicial"/>
+            <output expression="&quot;Introduzca la velocidad final&quot;" newline="True"/>
+            <input variable="final"/>
+            <output expression="&quot;Introduzca el tiempo&quot;" newline="True"/>
+            <input variable="time"/>
+            <assign variable="acel" expression="((inicial + final)/2)*time"/>
+            <output expression="acel &amp;&quot; metros&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-14 09:40:02 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDc7MjAxOC0wOS0xMzswOTo0MTowNCBhLiBtLjsyOTQ5"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDc7MjAxOC0wOS0xMzswOTo1NDowNiBhLiBtLjs3OzMwNjk="/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDk7MjAxOC0wOS0xNDswOTo0MDowMiBhLiBtLjsxOzMwNTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="check" type="String" array="False" size=""/>
+            <declare name="figura" type="String" array="False" size=""/>
+            <declare name="figura2" type="String" array="False" size=""/>
+            <declare name="trap" type="Real" array="False" size=""/>
+            <declare name="trian" type="Real" array="False" size=""/>
+            <declare name="cuad" type="Real" array="False" size=""/>
+            <declare name="result" type="Real" array="False" size=""/>
+            <output expression="&quot;Qu&#233; figura est&#225; usando?&quot;" newline="True"/>
+            <input variable="figura"/>
+            <if expression="figura=&quot;trapecio&quot;">
+                <then>
+                    <output expression="&quot;Base menor&quot;" newline="True"/>
+                    <input variable="trap"/>
+                    <output expression="&quot;Base mayor&quot;" newline="True"/>
+                    <input variable="trian"/>
+                    <output expression="&quot;Altura&quot;" newline="True"/>
+                    <input variable="cuad"/>
+                    <assign variable="result" expression="(trap + trian)*cuad/2"/>
+                </then>
+                <else>
+                    <if expression="figura=&quot;triangulo&quot;">
+                        <then>
+                            <output expression="&quot;Base&quot;" newline="True"/>
+                            <input variable="trap"/>
+                            <output expression="&quot;Altura&quot;" newline="True"/>
+                            <input variable="cuad"/>
+                            <assign variable="result" expression="trap*cuad/2"/>
+                        </then>
+                        <else>
+                            <if expression="figura=&quot;cuadrado&quot;">
+                                <then>
+                                    <output expression="&quot;Lado&quot;" newline="True"/>
+                                    <input variable="trap"/>
+                                    <assign variable="result" expression="trap*trap"/>
+                                </then>
+                                <else>
+                                    <if expression="figura=&quot;romboide&quot;">
+                                        <then>
+                                            <output expression="&quot;Base&quot;" newline="True"/>
+                                            <input variable="trap"/>
+                                            <output expression="&quot;Altura&quot;" newline="True"/>
+                                            <input variable="cuad"/>
+                                            <assign variable="result" expression="trap*cuad"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="result" expression="&quot;FIgura Inv&#225;lida&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="figura=&quot;Figura Inv&#225;lida&quot;">
+                <then/>
+                <else>
+                    <output expression="&quot;Quiere sacar cuna de volumen?&quot;" newline="True"/>
+                    <input variable="check"/>
+                    <if expression="check=&quot;si&quot;">
+                        <then>
+                            <output expression="&quot;De que figura?&quot;" newline="True"/>
+                            <input variable="figura2"/>
+                            <if expression="figura2=&quot;esfera&quot;">
+                                <then/>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

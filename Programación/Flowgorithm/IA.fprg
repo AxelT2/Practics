@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-12 09:50:24 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMTA7MjAxOC0wOS0xMjswOTowNjoxNCBhLiBtLjsyOTQ0"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMTA7MjAxOC0wOS0xMjswOTo1MDoyNCBhLiBtLjsxOzMwNTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="perro" type="String" array="False" size=""/>
+            <declare name="check" type="Integer" array="False" size=""/>
+            <declare name="nombre" type="String" array="False" size=""/>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <declare name="correcto" type="Integer" array="False" size=""/>
+            <declare name="bruh" type="String" array="False" size=""/>
+            <output expression="&quot;Cual es tu nombre?&quot;" newline="False"/>
+            <input variable="nombre"/>
+            <output expression="&quot;Cuantos a&#241;os tienes?&quot;" newline="True"/>
+            <input variable="edad"/>
+            <while expression="edad&gt;40">
+                <output expression="&quot;No seas payaso&quot;" newline="True"/>
+                <output expression="&quot;Pon tu edad real&quot;" newline="True"/>
+                <input variable="edad"/>
+            </while>
+            <assign variable="correcto" expression="2018 - edad"/>
+            <output expression="&quot;&#191;Naciste en el &quot;&amp;correcto &amp;&quot;, Correcto?&quot;" newline="True"/>
+            <input variable="bruh"/>
+            <if expression="bruh=&quot;Si&quot;">
+                <then>
+                    <output expression="&quot;Lo s&#233;, soy un crack&quot;" newline="True"/>
+                    <assign variable="check" expression="1"/>
+                </then>
+                <else>
+                    <if expression="bruh=&quot;si&quot;">
+                        <then>
+                            <output expression="&quot;Lo s&#233;, soy un crack&quot;" newline="True"/>
+                            <assign variable="check" expression="1"/>
+                        </then>
+                        <else>
+                            <if expression="bruh=&quot;simon&quot;">
+                                <then>
+                                    <output expression="&quot;Lo s&#233;, soy un crack&quot;" newline="True"/>
+                                    <assign variable="check" expression="1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="bruh=&quot;no&quot;">
+                <then>
+                    <output expression="&quot;Ah caray&quot;" newline="True"/>
+                    <assign variable="check" expression="0"/>
+                </then>
+                <else>
+                    <if expression="bruh=&quot;No&quot;">
+                        <then>
+                            <output expression="&quot;Ah caray&quot;" newline="True"/>
+                            <assign variable="check" expression="0"/>
+                        </then>
+                        <else>
+                            <if expression="bruh=&quot;Nel&quot;">
+                                <then>
+                                    <output expression="&quot;Ah caray&quot;" newline="True"/>
+                                    <assign variable="check" expression="0"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="check=1">
+                <then>
+                    <output expression="&quot;Algo m&#225;s?&quot;" newline="True"/>
+                    <input variable="perro"/>
+                    <if expression="perro=&quot;si&quot;">
+                        <then>
+                            <output expression="&quot;Era broma, ya llegale de aqu&#237; orale&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Crees que me vas a ganar?&quot;" newline="True"/>
+                    <input variable="perro"/>
+                    <if expression="perro=&quot;si&quot;">
+                        <then/>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

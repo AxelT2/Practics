@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-14 09:50:29 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMDk7MjAxOC0wOS0xNDswOToxMzo0OSBhLiBtLjsyOTYw"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMDk7MjAxOC0wOS0xNDswOTo1MDoyOSBhLiBtLjsyOzMwNjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="result" type="Real" array="False" size=""/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <declare name="y1" type="Real" array="False" size=""/>
+            <declare name="y2" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese la primera coordenada&quot;" newline="True"/>
+            <output expression="&quot;Ingrese s&#243;lo X&quot;" newline="True"/>
+            <input variable="x1"/>
+            <output expression="&quot;Ahora ingrese Y&quot;" newline="True"/>
+            <input variable="y1"/>
+            <output expression="&quot;Ingrese la segunda coordenada&quot;" newline="True"/>
+            <output expression="&quot;Ingrese s&#243;lo X&quot;" newline="True"/>
+            <input variable="x2"/>
+            <output expression="&quot;Ahora ingrese Y&quot;" newline="True"/>
+            <input variable="y2"/>
+            <assign variable="result" expression="(y2 - y1)/(x2 - x1)"/>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

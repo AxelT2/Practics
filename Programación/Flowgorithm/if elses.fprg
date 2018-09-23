@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-19 09:43:51 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMTA7MjAxOC0wOS0xOTswOToyMToyOSBhLiBtLjsyOTU0"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMTA7MjAxOC0wOS0xOTswOTo0Mzo1MSBhLiBtLjsxOzMwNjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="califa" type="Real" array="False" size=""/>
+            <output expression="&quot;Input Califa&quot;" newline="True"/>
+            <input variable="califa"/>
+            <while expression="califa&gt;100">
+                <output expression="&quot;No manches, eso ni se puede ponla bien&quot;" newline="True"/>
+                <input variable="califa"/>
+            </while>
+            <if expression="califa&lt;=70">
+                <then>
+                    <output expression="califa &amp;&quot;?, te pases de lanza&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="califa &amp;&quot;, Ya la hiciste viejon&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
