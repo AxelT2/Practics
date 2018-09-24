@@ -1,0 +1,49 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    double result;
+    int num1;
+    int dem1;
+    int num2;
+    int dem2;
+    
+    cout << "Inserte la primera fracción" << endl;
+    cout << "Numerador" << endl;
+    cin >> num1;
+    cout << "Denominador" << endl;
+    cin >> dem1;
+    cout << "Inserte la segunda fracción" << endl;
+    cout << "Numerador" << endl;
+    cin >> num2;
+    cout << "Denominador" << endl;
+    cin >> dem2;
+    result = (double) num1 * num2 / (dem1 * dem2);
+    cout << result << endl;
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}
